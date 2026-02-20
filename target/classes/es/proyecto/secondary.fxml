@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.proyecto.controller.SecondaryController">
+   <top>
+      <Label text="RECETAS" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Times New Roman" size="29.0" />
+         </font>
+         <BorderPane.margin>
+            <Insets top="20.0" />
+         </BorderPane.margin>
+      </Label>
+   </top>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+   <bottom>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnVolver" mnemonicParsing="false" onAction="#btnVolverCalculadora" prefHeight="50.0" prefWidth="90.0" text="Volver">
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="300.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnSalir" mnemonicParsing="false" onAction="#btnSalir" prefHeight="50.0" prefWidth="90.0" text="Salir">
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="80.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </bottom>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="lblMacrosTotales" alignment="CENTER" prefHeight="117.0" prefWidth="302.0" text="Label">
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" left="300.0" right="20.0" top="20.0" />
+               </VBox.margin>
+            </Label>
+            <ListView fx:id="listaRecetas" prefHeight="400.0" prefWidth="200.0">
+               <VBox.margin>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </VBox.margin></ListView>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
