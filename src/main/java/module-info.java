@@ -11,7 +11,7 @@ module es.proyecto {
     opens es.proyecto to javafx.fxml;
     opens es.proyecto.model to javafx.fxml, org.hibernate.orm.core;
     opens es.proyecto.controller to javafx.fxml;
-    opens es.proyecto.persistencie to org.hibernate.orm.core;
+    opens es.proyecto.persistence to org.hibernate.orm.core;
     
     exports es.proyecto;
     exports es.proyecto.controller;

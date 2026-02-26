@@ -3,8 +3,8 @@ package es.proyecto.controller;
 import es.proyecto.App;
 import es.proyecto.context.Usuario;
 import es.proyecto.model.Receta;
+import es.proyecto.persistence.RecetaDAO;
 import es.proyecto.service.CalculadoraNutricional;
-import es.proyecto.persistencie.RecetaDAO;
 import es.proyecto.context.InformacionTemporal;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -18,7 +18,7 @@ import java.util.ResourceBundle;
 
 public class SecondaryController implements Initializable {
 
-    public Button btnSalir;
+    @FXML private Button btnSalir;
     @FXML private ListView<String> listaRecetas;
     @FXML private Label lblMacrosTotales;
     @FXML private Button btnVolver;

@@ -1,4 +1,4 @@
-package es.proyecto.persistencie;
+package es.proyecto.persistence;
 
 import es.proyecto.model.Receta;
 import org.hibernate.SessionFactory;
@@ -23,7 +23,7 @@ public class HibernateUtil {
         }
     }
 
-    // Devuelve la instancia de SessionFactory para que los DAOs puedan abrir sesiones
+    // Devuelve la instancia de SessionFactory para que RecetaDAO pueda abrir la sesión y acceder a la base de datos
     public static SessionFactory getSessionFactory() {
         return sessionFactory;
     }

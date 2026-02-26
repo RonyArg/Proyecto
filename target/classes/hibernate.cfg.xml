@@ -14,12 +14,12 @@
         <property name="hibernate.connection.username">root</property>
         <property name="hibernate.connection.password">1122</property>
 
-        <!-- Configuración que elige el dialecto, crea tablas si no existen, muestra las consultas sql en consola, crea una sesión por hilo -->
+        <!-- Configuración que crea tablas si no existen, muestra las consultas sql en consola, crea una sesión por hilo -->
         <property name="hibernate.hbm2ddl.auto">update</property>
         <property name="hibernate.show_sql">true</property>
         <property name="current_session_context_class">thread</property>
 
-        <!-- Clases Java que mapea y establece la conexión -->
+        <!-- Clase Java que mapea y establece la conexión -->
         <mapping class="es.proyecto.model.Receta"/>
 
     </session-factory>

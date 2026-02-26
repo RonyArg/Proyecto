@@ -14,17 +14,17 @@ import javafx.scene.control.*;
 // Gestiona la validación de campos, la creación del objeto Usuario y la navegación a la segunda vista.
 public class PrimaryController implements Initializable {
 
-    public Label nombreTitulo;
-    public Button btnIniciar;
-    public Button btnSalir;
-    public TextField txtNombre;
-    public TextField txtEdad;
-    public TextField txtPeso;
-    public TextField txtAltura;
-    public ComboBox<String> cmbGenero;
-    public ComboBox<String> cmbEstilo;
-    public ComboBox<String> cmbObjetivo;
-    public Button btnLimpiar;
+    @FXML private Label nombreTitulo;
+    @FXML private Button btnIniciar;
+    @FXML private Button btnSalir;
+    @FXML private TextField txtNombre;
+    @FXML private TextField txtEdad;
+    @FXML private TextField txtPeso;
+    @FXML private TextField txtAltura;
+    @FXML private ComboBox<String> cmbGenero;
+    @FXML private ComboBox<String> cmbEstilo;
+    @FXML private ComboBox<String> cmbObjetivo;
+    @FXML private Button btnLimpiar;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -39,7 +39,8 @@ public class PrimaryController implements Initializable {
         String genero;
         String estilo;
         String objetivo;
-        int edad, altura;
+        int edad;
+        double altura;
         double peso;
 
         try {
@@ -48,8 +49,7 @@ public class PrimaryController implements Initializable {
 
             edad = Integer.parseInt(txtEdad.getText().trim());
             peso = Double.parseDouble(txtPeso.getText().trim().replace(",", "."));
-            altura = Integer.parseInt(txtAltura.getText().trim());
-
+            altura = Double.parseDouble(txtAltura.getText().trim());
             genero = cmbGenero.getValue();
             estilo = cmbEstilo.getValue();
             objetivo = cmbObjetivo.getValue();

@@ -126,7 +126,7 @@
                </font>
             </TextField>
             <ComboBox fx:id="cmbGenero" prefHeight="40.0" prefWidth="230.0" promptText="Selecciona tu género" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-            <ComboBox fx:id="cmbEstilo" prefHeight="40.0" prefWidth="230.0" promptText="Actividad diara" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <ComboBox fx:id="cmbEstilo" prefHeight="40.0" prefWidth="230.0" promptText="Actividad diaria" GridPane.columnIndex="1" GridPane.rowIndex="5" />
             <ComboBox fx:id="cmbObjetivo" prefHeight="40.0" prefWidth="230.0" promptText="¿Qué buscas?" GridPane.columnIndex="1" GridPane.rowIndex="6" />
          </children>
       </GridPane>

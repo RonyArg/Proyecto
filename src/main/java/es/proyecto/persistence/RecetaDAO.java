@@ -1,4 +1,4 @@
-package es.proyecto.persistencie;
+package es.proyecto.persistence;
 
 import es.proyecto.model.Receta;
 import org.hibernate.Session;
@@ -13,7 +13,7 @@ public class RecetaDAO {
     private SessionFactory sessionFactory;
 
     public RecetaDAO() {
-        this.sessionFactory = HibernateUtil.getSessionFactory();
+        this.sessionFactory = es.proyecto.persistence.HibernateUtil.getSessionFactory();
     }
 
 
