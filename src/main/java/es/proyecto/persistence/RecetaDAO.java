@@ -5,15 +5,15 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import java.util.List;
 
-/**
- * Data Access Object (DAO) para operaciones con Receta
- */
+
+  //Data Access Object (DAO) para operaciones con Receta
+ 
 public class RecetaDAO {
 
     private SessionFactory sessionFactory;
 
     public RecetaDAO() {
-        this.sessionFactory = es.proyecto.persistence.HibernateUtil.getSessionFactory();
+        this.sessionFactory = HibernateUtil.getSessionFactory();
     }
 
 
