@@ -6,6 +6,7 @@ public class Usuario {
     private String nombre;
     private int edad;
     private double peso;
+
     private double altura;
     private String genero;
     private String estilo;

@@ -35,7 +35,10 @@ public class Receta {
         this.carbohidratos = carbohidratos;
         this.grasas = grasas;
     }
-
+    
+    public void getRecetaInfo(){
+        System.out.println("- " + nombre + ". Calorías: " + calorias + ", Proteínas: " + proteinas + "g, Carbohidratos: " + carbohidratos + "g, Grasas: " + grasas + "g");
+    }
 
     //Getters y setters
     public int getId() {

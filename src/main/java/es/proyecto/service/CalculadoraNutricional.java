@@ -5,7 +5,7 @@ public class CalculadoraNutricional {
 
 
     public static double calcularCalorias(double peso, double altura, int edad, String genero, String estilo, String objetivo) {
-        // Fórmula para calcular la tasa metabólica basal (TMB)
+        // Fórmula para calcular la tasa metabólica basal (TMB) - Miffflin-St Jeor
         double tmb = (10 * peso) + (6.25 * altura) - (5 * edad);
 
         if (genero.equalsIgnoreCase("Masculino")) {
