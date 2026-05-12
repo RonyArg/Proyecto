@@ -11,14 +11,14 @@ import java.io.IOException;
 public class App extends Application {
 
     private static Scene scene;
-    private static Stage primaryStage;
 
     @Override
     public void start(Stage stage) throws IOException {
-        primaryStage = stage;
         scene = new Scene(loadFXML("primary"), 900, 700);
         stage.setScene(scene);
-        stage.setTitle("Configurador de Recetas");
+        stage.setTitle("Tu Calculadora Nutricional");
+        stage.setResizable(false);
+        stage.getIcons().add(new javafx.scene.image.Image(getClass().getResourceAsStream("/apple.png")));
         stage.show();
     }
 

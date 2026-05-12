@@ -40,20 +40,18 @@ class CalculadoraNutricionalTest {
         double calorias = 2500;
         double peso = 70;
 
-        String resultado = CalculadoraNutricional.obtenerMacros(calorias, peso);
+        es.proyecto.model.Macros resultado = CalculadoraNutricional.obtenerMacros(calorias, peso);
 
         // Calorías
-        assertTrue(resultado.contains("Calorías: 2500"));
+        assertEquals(2500.0, resultado.getCalorias(), 0.01);
 
         // Proteínas: 70 * 2.0 = 140.00
-        assertTrue(resultado.contains("Proteínas: 140,00 gramos"));
+        assertEquals(140.0, resultado.getProteinasGramos(), 0.01);
 
         // Grasas: 70 * 0.9 = 63.00
-        assertTrue(resultado.contains("Grasas: 63,00 gramos"));
+        assertEquals(63.0, resultado.getGrasasGramos(), 0.01);
 
         // Carbohidratos: (2500 - (140*4 + 63*9)) / 4 = 343.25
-        assertTrue(resultado.contains("Carbohidratos: 343,25 gramos"));
-
-
+        assertEquals(343.25, resultado.getCarbohidratosGramos(), 0.01);
     }
 }

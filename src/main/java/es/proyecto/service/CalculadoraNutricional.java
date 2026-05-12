@@ -1,5 +1,6 @@
 package es.proyecto.service;
 
+import es.proyecto.model.Macros;
 
 public class CalculadoraNutricional {
 
@@ -33,11 +34,12 @@ public class CalculadoraNutricional {
             return mantenimiento + 400;
         } else {
             return mantenimiento; // Mantenimiento
-        }
-    }
+        }}
+    
 
-    //Calcula los macronutrientes necesarios
-    public static String obtenerMacros(double calorias, double peso) {
+     
+
+    public static Macros obtenerMacros(double calorias, double peso) {
         double proteinasGramos = peso * 2.0;
         double grasasGramos = peso * 0.9;
         double proteinasKcal = proteinasGramos * 4;
@@ -45,9 +47,6 @@ public class CalculadoraNutricional {
         double carbohidratosKcal = calorias - (proteinasKcal + grasasKcal);
         double carbohidratosGramos = carbohidratosKcal / 4;
 
-        return "\nCalorías: " + String.format("%.2f", calorias) 
-            + "\nProteínas: " + String.format("%.2f", proteinasGramos) + " gramos"
-            + "\nCarbohidratos: " + String.format("%.2f", carbohidratosGramos) + " gramos"
-            + "\nGrasas: " + String.format("%.2f", grasasGramos) + " gramos";
+        return new Macros(calorias, proteinasGramos, carbohidratosGramos, grasasGramos);
     }
 }

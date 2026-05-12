@@ -2,6 +2,7 @@ package es.proyecto.controller;
 
 import es.proyecto.App;
 import es.proyecto.context.Usuario;
+import es.proyecto.model.Macros;
 import es.proyecto.model.Receta;
 import es.proyecto.persistence.RecetaDAO;
 import es.proyecto.service.CalculadoraNutricional;
@@ -50,9 +51,12 @@ public class SecondaryController implements Initializable {
                 usuarioActual.getEdad(), usuarioActual.getGenero(),
                 usuarioActual.getEstilo(), usuarioActual.getObjetivo()
         );
-
-        lblMacrosTotales.setText("Macros diarios: " +
-                CalculadoraNutricional.obtenerMacros(calorias, usuarioActual.getPeso()));
+        Macros macros = CalculadoraNutricional.obtenerMacros(calorias, usuarioActual.getPeso());
+        lblMacrosTotales.setText(String.format(
+                "Macros diarios: Calorías: %.2f\nProteínas: %.2f g\nCarbohidratos: %.2f g\nGrasas: %.2f g",
+                macros.getCalorias(), macros.getProteinasGramos(), 
+                macros.getCarbohidratosGramos(), macros.getGrasasGramos()
+        ));
 
         //  Carga las recetas desde Base de Datos creando un objeto recetaDAO y usa el método obtenerRecetas()
         RecetaDAO recetaDAO = new RecetaDAO();

@@ -23,7 +23,7 @@ public class RecetaDAO {
         try {
             return session.createQuery("FROM Receta", Receta.class).list();
         } catch (Exception e) {
-            System.err.println("✗ Error al obtener recetas: " + e.getMessage());
+            System.err.println("Error al obtener recetas: " + e.getMessage());
             return new java.util.ArrayList<>();
         } finally {
             session.close();
