@@ -12,7 +12,7 @@ import javafx.scene.control.*;
 
 // Controlador de la pantalla principal donde el usuario introduce sus datos personales.
 // Gestiona la validación de campos, la creación del objeto Usuario y la navegación a la segunda vista.
-public class PrimaryController implements Initializable {
+public class FormularioController implements Initializable {
 
     @FXML private Label nombreTitulo;
     @FXML private Button btnIniciar;

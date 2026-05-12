@@ -37,9 +37,8 @@ public class CalculadoraNutricional {
         }}
     
 
-     
-
     public static Macros obtenerMacros(double calorias, double peso) {
+        // Esta clase representa los macronutrientes calculados para un usuario, incluyendo calorías, proteínas, carbohidratos y grasas.
         double proteinasGramos = peso * 2.0;
         double grasasGramos = peso * 0.9;
         double proteinasKcal = proteinasGramos * 4;

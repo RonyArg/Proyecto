@@ -17,7 +17,7 @@ import java.net.URL;
 import java.util.List;
 import java.util.ResourceBundle;
 
-public class SecondaryController implements Initializable {
+public class DatosUsuarioController implements Initializable {
 
     @FXML private Button btnSalir;
     @FXML private ListView<String> listaRecetas;

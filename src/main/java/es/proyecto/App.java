@@ -5,7 +5,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-
 import java.io.IOException;
 
 public class App extends Application {
@@ -17,8 +16,8 @@ public class App extends Application {
         scene = new Scene(loadFXML("primary"), 900, 700);
         stage.setScene(scene);
         stage.setTitle("Tu Calculadora Nutricional");
-        stage.setResizable(false);
-        stage.getIcons().add(new javafx.scene.image.Image(getClass().getResourceAsStream("/apple.png")));
+        stage.setResizable(false); // Evita que el usuario cambie el tamaño de la ventana
+        stage.getIcons().add(new javafx.scene.image.Image(getClass().getResourceAsStream("/apple.png"))); //Imagen de la app
         stage.show();
     }
 

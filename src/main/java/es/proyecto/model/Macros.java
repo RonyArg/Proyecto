@@ -1,5 +1,8 @@
 package es.proyecto.model;
 
+
+// Esta clase representa los macronutrientes calculados para un usuario, incluyendo calorías, proteínas, carbohidratos y grasas.
+
 public class Macros {
     private double calorias;
     private double proteinasGramos;
