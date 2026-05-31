@@ -1,0 +1,262 @@
+/* FONDO Y TIPOGRAFÍA GENERAL */
+.root {
+    -fx-background-color: linear-gradient(to bottom, #F9FAFB 0%, #F3F4F6 100%);
+    -fx-font-family: "Segoe UI", "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+.label {
+    -fx-text-fill: #1F2937;
+    -fx-font-size: 14px;
+    -fx-font-family: "Segoe UI", "Open Sans", Helvetica, Arial, sans-serif;
+    -fx-font-weight: 500;
+    -fx-padding: 5px 0;
+}
+
+.etiqueta-campo {
+    -fx-font-size: 14px;
+    -fx-font-weight: 600;
+    -fx-text-fill: #059669;
+    -fx-padding: 0 0 5px 2px;
+    -fx-letter-spacing: 0.5;
+}
+
+.titulo-principal {
+    -fx-font-size: 16px;
+    -fx-font-weight: 700;
+    -fx-text-fill: linear-gradient(to right, #047857, #059669);
+    -fx-padding: 8px 0 8px 0;
+    -fx-letter-spacing: 0.3;
+}
+
+/* CAMPOS DE ENTRADA Y DESPLEGABLES */
+
+.entrada-datos {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #D1D5DB;
+    -fx-border-radius: 12px;
+    -fx-background-radius: 12px;
+    -fx-padding: 14px 16px;
+    -fx-font-size: 15px;
+    -fx-text-fill: #1F2937;
+    -fx-border-width: 2px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.08), 4, 0.0, 0, 2);
+    -fx-font-smoothing-type: gray;
+}
+
+.entrada-datos:hover {
+    -fx-border-color: #10B981;
+    -fx-background-color: #F0FFFE;
+    -fx-effect: dropshadow(three-pass-box, rgba(16, 185, 129, 0.25), 8, 0.0, 0, 3);
+    -fx-cursor: text;
+}
+
+.entrada-datos:focused {
+    -fx-border-color: linear-gradient(to right, #10B981, #059669);
+    -fx-background-color: #F8FFFE;
+    -fx-effect: dropshadow(three-pass-box, rgba(16, 185, 129, 0.45), 12, 0.0, 0, 5);
+    -fx-text-fill: #047857;
+}
+
+.entrada-campo {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #D1D5DB;
+    -fx-border-radius: 12px;
+    -fx-background-radius: 12px;
+    -fx-padding: 8px 14px;
+    -fx-font-size: 14px;
+    -fx-text-fill: #1F2937;
+    -fx-border-width: 2px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.08), 4, 0.0, 0, 2);
+}
+
+.entrada-campo:hover {
+    -fx-border-color: #10B981;
+    -fx-background-color: #F0FFFE;
+    -fx-effect: dropshadow(three-pass-box, rgba(16, 185, 129, 0.25), 8, 0.0, 0, 3);
+    -fx-cursor: hand;
+}
+
+.entrada-campo:focused {
+    -fx-border-color: linear-gradient(to right, #10B981, #059669);
+    -fx-background-color: #F8FFFE;
+    -fx-effect: dropshadow(three-pass-box, rgba(16, 185, 129, 0.45), 12, 0.0, 0, 5);
+    -fx-text-fill: #047857;
+}
+
+/* Estilo para las flechas del ComboBox */
+.entrada-campo .arrow-button {
+    -fx-background-color: transparent;
+}
+
+.entrada-campo .arrow {
+    -fx-background-color: #4B5563;
+}
+
+.entrada-datos .arrow-button {
+    -fx-background-color: transparent;
+}
+
+.entrada-datos .arrow {
+    -fx-background-color: #4B5563;
+}
+
+
+/* BOTÓN PRIMARIO - INICIAR */
+.btn-primario {
+    -fx-background-color: linear-gradient(to bottom, #10B981, #059669);
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 12px 28px;
+    -fx-background-radius: 10px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(16, 185, 129, 0.4), 10, 0.0, 0, 4);
+    -fx-border-radius: 10px;
+    -fx-text-alignment: center;
+}
+
+.btn-primario:hover {
+    -fx-background-color: linear-gradient(to bottom, #059669, #047857);
+    -fx-effect: dropshadow(three-pass-box, rgba(5, 150, 105, 0.7), 15, 0.0, 0, 7);
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+.btn-primario:pressed {
+    -fx-translate-y: 2px;
+    -fx-effect: dropshadow(three-pass-box, rgba(5, 150, 105, 0.3), 8, 0.0, 0, 2);
+}
+
+/* BOTÓN LIMPIAR/BORRAR */
+.btnLimpiar {
+    -fx-background-color: linear-gradient(to bottom, #FEE2E2, #FECACA);
+    -fx-text-fill: #DC2626;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 12px 28px;
+    -fx-background-radius: 10px;
+    -fx-cursor: hand;
+    -fx-border-color: #FCA5A5;
+    -fx-border-radius: 10px;
+    -fx-border-width: 2px;
+    -fx-effect: dropshadow(three-pass-box, rgba(220, 38, 38, 0.25), 8, 0.0, 0, 3);
+    -fx-text-alignment: center;
+}
+
+.btnLimpiar:hover {
+    -fx-background-color: linear-gradient(to bottom, #FECACA, #FCA5A5);
+    -fx-text-fill: #B91C1C;
+    -fx-border-color: #F87171;
+    -fx-effect: dropshadow(three-pass-box, rgba(185, 28, 28, 0.45), 12, 0.0, 0, 5);
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+.btnLimpiar:pressed {
+    -fx-translate-y: 2px;
+    -fx-effect: dropshadow(three-pass-box, rgba(185, 28, 28, 0.2), 6, 0.0, 0, 2);
+}
+
+/* BOTÓN SECUNDARIO - SALIR/VOLVER */
+.btn-secundario {
+    -fx-background-color: linear-gradient(to bottom, #E5E7EB, #D1D5DB);
+    -fx-text-fill: #374151;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 12px 28px;
+    -fx-background-radius: 10px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 8, 0.0, 0, 2);
+    -fx-border-radius: 10px;
+    -fx-text-alignment: center;
+}
+
+.btn-secundario:hover {
+    -fx-background-color: linear-gradient(to bottom, #D1D5DB, #B4B8C1);
+    -fx-text-fill: #111827;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 12, 0.0, 0, 4);
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+.btn-secundario:pressed {
+    -fx-translate-y: 2px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.08), 6, 0.0, 0, 1);
+}
+
+/* LISTAS Y VISTAS */
+
+.list-view {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #E5E7EB;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-border-width: 1.5px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.08), 4, 0.0, 0, 2);
+    -fx-font-size: 15px;
+}
+
+.list-view:focused {
+    -fx-border-color: #10B981;
+}
+
+.list-cell {
+    -fx-padding: 12px 15px;
+    -fx-font-size: 15px;
+    -fx-text-fill: #1F2937;
+}
+
+.list-cell:selected {
+    -fx-background-color: #D1FAE5;
+    -fx-text-fill: #059669;
+    -fx-font-weight: bold;
+}
+
+.list-cell:filled:hover {
+    -fx-background-color: #F0FFFE;
+}
+
+/* ===================================================== */
+/* EFECTOS GENERALES */
+/* ===================================================== */
+
+.combo-box {
+    -fx-background-color: transparent;
+}
+
+/* Scroll bar styling */
+.scroll-bar {
+    -fx-background-color: #F3F4F6;
+}
+
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #D1D5DB;
+    -fx-background-radius: 2px;
+}
+
+.scroll-bar:vertical .thumb:hover {
+    -fx-background-color: #10B981;
+}
+
+
+/* ADAPTACIONES RESPONSIVAS */
+
+.hbox {
+    -fx-spacing: 10px;
+}
+
+.vbox {
+    -fx-spacing: 10px;
+}
+
+/* TITULO PRINCIPAL - PRIORIDAD MÁXIMA */
+.nombreTitulo {
+    -fx-font-size: 26px;
+    -fx-font-family: "Arial Black", "Arial", sans-serif;
+    -fx-font-weight: 900;
+    -fx-text-fill: linear-gradient(to right, #10B981 0%, #059669 50%, #047857 100%);
+    -fx-border-color: linear-gradient(to right, #10B981, #059669);
+    -fx-border-width: 0 0 6 0;
+    -fx-padding: 25px 40px 20px 40px;
+    -fx-effect: dropshadow(three-pass-box, rgba(16, 185, 129, 0.25), 10, 0.0, 0, 3);
+}

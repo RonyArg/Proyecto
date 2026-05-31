@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
@@ -12,38 +13,45 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="650.0" maxWidth="850.0" minHeight="650.0" minWidth="850.0" prefHeight="650.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.proyecto.controller.FormularioController">
+<BorderPane maxHeight="650.0" maxWidth="850.0" minHeight="650.0" minWidth="850.0" prefHeight="650.0" prefWidth="850.0" stylesheets="@../../styles.css" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.proyecto.controller.FormularioController">
    <top>
-      <Label fx:id="nombreTitulo" text="CONFIGURADOR DE RECETAS" textAlignment="CENTER" BorderPane.alignment="CENTER">
-         <font>
-            <Font name="Times New Roman" size="39.0" />
-         </font>
+      <Label fx:id="nombreTitulo" alignment="CENTER" contentDisplay="CENTER" depthTest="DISABLE" prefHeight="57.0" prefWidth="525.0" styleClass="nombreTitulo" text="CONFIGURADOR DE RECETAS" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS" BorderPane.alignment="CENTER">
          <BorderPane.margin>
             <Insets bottom="20.0" left="10.0" right="10.0" top="10.0" />
          </BorderPane.margin>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <font>
+            <Font name="Arial Black" size="40.0"/>
+         </font>
+         <opaqueInsets>
+            <Insets bottom="20.0" top="20.0" />
+         </opaqueInsets>
+
       </Label>
    </top>
    <bottom>
-      <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+      <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0" spacing="15.0" BorderPane.alignment="CENTER">
          <children>
-            <Button fx:id="btnIniciar" mnemonicParsing="false" onAction="#btnIniciarCalculadora" prefHeight="50.0" prefWidth="90.0" text="Iniciar">
+            <Button fx:id="btnIniciar" mnemonicParsing="false" onAction="#btnIniciarCalculadora" prefHeight="55.0" prefWidth="130.0" styleClass="btn-primario" text="Iniciar">
                <font>
-                  <Font name="Times New Roman" size="16.0" />
+                  <Font name="Arial Black" size="16.0" />
                </font>
                <HBox.margin>
                   <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                </HBox.margin></Button>
-            <Button fx:id="btnLimpiar" mnemonicParsing="false" onAction="#btnLimpiarCalculadora" prefHeight="50.0" prefWidth="90.0" text="Borrar">
+            <Button fx:id="btnLimpiar" mnemonicParsing="false" onAction="#btnLimpiarCalculadora" prefHeight="55.0" prefWidth="130.0" styleClass="btnLimpiar" text="Borrar">
                <font>
-                  <Font name="Times New Roman" size="16.0" />
+                  <Font name="Arial Black" size="16.0" />
                </font>
                <HBox.margin>
                   <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                </HBox.margin>
             </Button>
-            <Button fx:id="btnSalir" mnemonicParsing="false" onAction="#btnSalir" prefHeight="50.0" prefWidth="90.0" text="Salir">
+            <Button fx:id="btnSalir" mnemonicParsing="false" onAction="#btnSalir" prefHeight="55.0" prefWidth="130.0" styleClass="btn-secundario" text="Salir">
                <font>
-                  <Font name="Times New Roman" size="16.0" />
+                  <Font name="Arial Black" size="16.0" />
                </font>
                <HBox.margin>
                   <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
@@ -58,22 +66,22 @@
       <Insets left="40.0" right="40.0" top="40.0" />
    </padding>
    <center>
-      <GridPane prefWidth="412.0" BorderPane.alignment="CENTER">
+      <GridPane prefHeight="392.0" prefWidth="770.0" styleClass="combo-box" BorderPane.alignment="CENTER">
         <columnConstraints>
           <ColumnConstraints halignment="RIGHT" hgrow="ALWAYS" />
           <ColumnConstraints halignment="LEFT" hgrow="ALWAYS" maxWidth="Infinity" minWidth="10.0" prefWidth="543.0" />
         </columnConstraints>
         <rowConstraints>
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="50.0" valignment="CENTER" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Label contentDisplay="RIGHT" text="Nombre">
+            <Label contentDisplay="RIGHT" styleClass="titulo-principal" text="Nombre">
                <font>
                   <Font name="Times New Roman" size="18.0" />
                </font>
@@ -84,7 +92,7 @@
                   <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
                </GridPane.margin>
             </Label>
-            <Label text="Edad" GridPane.rowIndex="1">
+            <Label styleClass="titulo-principal" text="Edad" GridPane.rowIndex="1">
                <font>
                   <Font name="Times New Roman" size="18.0" />
                </font>
@@ -92,7 +100,7 @@
                   <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
                </GridPane.margin>
             </Label>
-            <Label text="Peso (kg)" GridPane.rowIndex="2">
+            <Label styleClass="titulo-principal" text="Peso (kg)" GridPane.rowIndex="2">
                <font>
                   <Font name="Times New Roman" size="18.0" />
                </font>
@@ -100,7 +108,7 @@
                   <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
                </GridPane.margin>
             </Label>
-            <Label text="Altura (cm)" GridPane.rowIndex="3">
+            <Label styleClass="titulo-principal" text="Altura (cm)" GridPane.rowIndex="3">
                <font>
                   <Font name="Times New Roman" size="18.0" />
                </font>
@@ -108,7 +116,7 @@
                   <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
                </GridPane.margin>
             </Label>
-            <Label text="Género" GridPane.rowIndex="4">
+            <Label styleClass="titulo-principal" text="Estilo de vida" GridPane.rowIndex="5">
                <font>
                   <Font name="Times New Roman" size="18.0" />
                </font>
@@ -116,7 +124,7 @@
                   <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
                </GridPane.margin>
             </Label>
-            <Label text="Estilo de vida" GridPane.rowIndex="5">
+            <Label styleClass="titulo-principal" text="Objetivo" GridPane.rowIndex="6">
                <font>
                   <Font name="Times New Roman" size="18.0" />
                </font>
@@ -124,7 +132,7 @@
                   <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
                </GridPane.margin>
             </Label>
-            <Label text="Objetivo" GridPane.rowIndex="6">
+            <Label styleClass="titulo-principal" text="Género" GridPane.rowIndex="4">
                <font>
                   <Font name="Times New Roman" size="18.0" />
                </font>
@@ -132,47 +140,47 @@
                   <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
                </GridPane.margin>
             </Label>
-            <TextField fx:id="txtNombre" prefHeight="29.0" prefWidth="476.0" promptText="Tú nombre" GridPane.columnIndex="1">
+            <TextField fx:id="txtNombre" prefHeight="29.0" prefWidth="476.0" promptText="Tú nombre" styleClass="entrada-datos" GridPane.columnIndex="1">
                <font>
                   <Font name="Times New Roman" size="16.0" />
                </font>
                <GridPane.margin>
-                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                  <Insets bottom="20.0" left="20.0" right="150.0" top="20.0" />
                </GridPane.margin>
             </TextField>
-            <TextField fx:id="txtEdad" promptText="Ejemplo: 27" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <TextField fx:id="txtEdad" prefHeight="23.0" prefWidth="417.0" promptText="Ejemplo: 27" styleClass="entrada-datos" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <font>
                   <Font name="Times New Roman" size="16.0" />
                </font>
                <GridPane.margin>
-                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                  <Insets bottom="20.0" left="20.0" right="150.0" top="20.0" />
                </GridPane.margin>
             </TextField>
-            <TextField fx:id="txtPeso" promptText="Ejemplo: 65,40" GridPane.columnIndex="1" GridPane.rowIndex="2">
+            <TextField fx:id="txtPeso" prefHeight="19.0" prefWidth="417.0" promptText="Ejemplo: 65,40" styleClass="entrada-datos" GridPane.columnIndex="1" GridPane.rowIndex="2">
                <font>
                   <Font name="Times New Roman" size="16.0" />
                </font>
                <GridPane.margin>
-                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                  <Insets bottom="20.0" left="20.0" right="150.0" top="20.0" />
                </GridPane.margin>
             </TextField>
-            <TextField fx:id="txtAltura" promptText="Ejemplo: 169" GridPane.columnIndex="1" GridPane.rowIndex="3">
+            <TextField fx:id="txtAltura" prefHeight="50.0" prefWidth="453.0" promptText="Ejemplo: 169" styleClass="entrada-datos" GridPane.columnIndex="1" GridPane.rowIndex="3">
                <font>
                   <Font name="Times New Roman" size="16.0" />
                </font>
                <GridPane.margin>
-                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                  <Insets bottom="20.0" left="20.0" right="150.0" top="20.0" />
                </GridPane.margin>
             </TextField>
-            <ComboBox fx:id="cmbGenero" prefHeight="28.0" prefWidth="338.0" promptText="Selecciona tu género" GridPane.columnIndex="1" GridPane.rowIndex="4">
+            <ComboBox fx:id="cmbGenero" prefHeight="38.0" prefWidth="413.0" promptText="Selecciona tu género" styleClass="entrada-campo" GridPane.columnIndex="1" GridPane.rowIndex="4">
                <GridPane.margin>
                   <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
                </GridPane.margin></ComboBox>
-            <ComboBox fx:id="cmbEstilo" prefHeight="28.0" prefWidth="341.0" promptText="Actividad diaria" GridPane.columnIndex="1" GridPane.rowIndex="5">
+            <ComboBox fx:id="cmbEstilo" prefHeight="38.0" prefWidth="413.0" promptText="Actividad diaria" styleClass="entrada-campo" GridPane.columnIndex="1" GridPane.rowIndex="5">
                <GridPane.margin>
                   <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
                </GridPane.margin></ComboBox>
-            <ComboBox fx:id="cmbObjetivo" prefHeight="28.0" prefWidth="342.0" promptText="¿Qué buscas?" GridPane.columnIndex="1" GridPane.rowIndex="6">
+            <ComboBox fx:id="cmbObjetivo" prefHeight="38.0" prefWidth="415.0" promptText="¿Qué buscas?" styleClass="entrada-campo" GridPane.columnIndex="1" GridPane.rowIndex="6">
                <GridPane.margin>
                   <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
                </GridPane.margin></ComboBox>

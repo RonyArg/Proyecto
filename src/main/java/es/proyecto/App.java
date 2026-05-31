@@ -1,11 +1,12 @@
 package es.proyecto;
 
+import java.io.IOException;
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import java.io.IOException;
 
 public class App extends Application {
 
@@ -14,6 +15,8 @@ public class App extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         scene = new Scene(loadFXML("primary"), 900, 700);
+        scene.getStylesheets().add(getClass().getResource("/styles.css").toExternalForm()); // Agrega la hoja de estilos CSS
+        
         stage.setScene(scene);
         stage.setTitle("Tu Calculadora Nutricional");
         stage.setResizable(false); // Evita que el usuario cambie el tamaño de la ventana

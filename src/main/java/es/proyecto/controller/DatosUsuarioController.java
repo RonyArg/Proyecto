@@ -1,21 +1,24 @@
 package es.proyecto.controller;
 
+import java.net.URL;
+import java.util.List;
+import java.util.ResourceBundle;
+
 import es.proyecto.App;
+import es.proyecto.context.InformacionTemporal;
 import es.proyecto.context.Usuario;
 import es.proyecto.model.Macros;
 import es.proyecto.model.Receta;
 import es.proyecto.persistence.RecetaDAO;
 import es.proyecto.service.CalculadoraNutricional;
-import es.proyecto.context.InformacionTemporal;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.*;
-
-import java.net.URL;
-import java.util.List;
-import java.util.ResourceBundle;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.ListView;
+import javafx.scene.control.SelectionMode;
 
 public class DatosUsuarioController implements Initializable {
 
@@ -53,7 +56,7 @@ public class DatosUsuarioController implements Initializable {
         );
         Macros macros = CalculadoraNutricional.obtenerMacros(calorias, usuarioActual.getPeso());
         lblMacrosTotales.setText(String.format(
-                "Macros diarios: Calorías: %.2f\nProteínas: %.2f g\nCarbohidratos: %.2f g\nGrasas: %.2f g",
+                "Macros diarios:\nCalorías: %.2f\nProteínas: %.2f g\nCarbohidratos: %.2f g\nGrasas: %.2f g",
                 macros.getCalorias(), macros.getProteinasGramos(), 
                 macros.getCarbohidratosGramos(), macros.getGrasasGramos()
         ));

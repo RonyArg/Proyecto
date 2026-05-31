@@ -22,12 +22,12 @@
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-controls</artifactId>
-            <version>21.0.2</version>
+            <version>25</version>
         </dependency>
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-fxml</artifactId>
-            <version>21.0.2</version>
+            <version>25</version>
         </dependency>
         <dependency>
             <groupId>org.hibernate.orm</groupId>
@@ -35,6 +35,8 @@
             <version>7.2.4.Final</version>
             <scope>compile</scope>
         </dependency>
+        
+        <!-- Dependencia para el dialecto de SQLite, necesario para que Hibernate sepa cómo interactuar con la base de datos SQLite -->
         <dependency>
             <groupId>org.hibernate.orm</groupId>
             <artifactId>hibernate-community-dialects</artifactId>

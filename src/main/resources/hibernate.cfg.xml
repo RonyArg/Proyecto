@@ -8,13 +8,13 @@
 
     <session-factory>
 
-        <!-- Configuración para la conexión (driver, url, usuario y contraseña)-->
+        <!-- Configuración para la conexión con la base de datos SQLite -->
         <property name="hibernate.connection.driver_class">org.sqlite.JDBC</property>
         <property name="hibernate.connection.url">jdbc:sqlite:recetas.db</property>
         <property name="hibernate.connection.username"></property>
         <property name="hibernate.connection.password"></property>
         
-        <!-- Configuración que crea tablas si no existen, muestra las consultas sql en consola, crea una sesión por hilo -->
+        <!-- Configuración que crea tablas si no existen, muestra las consultas sql en consolagit -->
         <property name="hibernate.hbm2ddl.auto">create</property>
         <property name="hibernate.show_sql">true</property>
         <property name="current_session_context_class">thread</property>
