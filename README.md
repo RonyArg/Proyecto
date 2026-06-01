@@ -4,10 +4,11 @@
 
  Se usa Hibernate para la persistencia de datos, SQLite y JavaFX para la interfaz gráfica.
 
+![Ventana principal](https://private-user-images.githubusercontent.com/193278705/600665385-c98daab9-225c-4556-b696-658937c884d5.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODAyNzA5MjYsIm5iZiI6MTc4MDI3MDYyNiwicGF0aCI6Ii8xOTMyNzg3MDUvNjAwNjY1Mzg1LWM5OGRhYWI5LTIyNWMtNDU1Ni1iNjk2LTY1ODkzN2M4ODRkNS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwNTMxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDUzMVQyMzM3MDZaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1iYzJkMDhmMDNlNTkwOTE0OWFhYjQxMjUwM2EwYWM0N2ViZmVlMGE3MjVhYTVjODA5ZmRkZGM4Mzc0MzFiZDZkJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.Gd4fqn4dpSfuS61mBm2DxfeH35mfVWjyELqKIIKtatE)
 
  ## Objetivo
 
- Desarrollar un software que calcule macronutrientes y calorías recomendadas para el perfil del usuario personalizado por un formulario de datos personales y ofrezca uns lista de recetas saludables el número de calorias aproximado (ración para 1 persona). 
+ Desarrollar un software que calcule macronutrientes y> calorías recomendadas para el perfil del usuario personalizado por un formulario de datos personales y ofrezca uns lista de recetas saludables el número de calorias aproximado (ración para 1 persona). 
 
 
  ## Descripción

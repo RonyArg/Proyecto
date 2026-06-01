@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="650.0" maxWidth="850.0" minHeight="650.0" minWidth="850.0" prefHeight="650.0" prefWidth="850.0" stylesheets="@../../styles.css" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.proyecto.controller.DatosUsuarioController">
+<BorderPane maxHeight="650.0" maxWidth="850.0" minHeight="650.0" minWidth="850.0" prefHeight="650.0" prefWidth="850.0" stylesheets="@/styles.css" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.proyecto.controller.DatosUsuarioController">
    <top>
       <Label styleClass="nombreTitulo" text="Tus Datos Nutricionales" BorderPane.alignment="CENTER">
          <font>

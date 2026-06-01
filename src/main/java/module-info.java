@@ -7,6 +7,7 @@ module es.proyecto {
     requires java.naming;
     requires java.sql;
     requires java.base;
+    requires org.xerial.sqlitejdbc;
 
     opens es.proyecto to javafx.fxml;
     opens es.proyecto.model to javafx.fxml, org.hibernate.orm.core;

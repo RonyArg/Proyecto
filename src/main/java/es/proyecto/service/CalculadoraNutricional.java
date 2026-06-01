@@ -33,9 +33,9 @@ public class CalculadoraNutricional {
         } else if (objetivo.equals("Ganancia muscular")) {
             return mantenimiento * 1.15; // Aumento del 15%
         } else {
-            return mantenimiento; }// Mantenimiento
+            return mantenimiento; // Mantenimiento
         }
-    
+    }
 
     public static Macros obtenerMacros(double calorias, double peso) {
         // Distribucion de macronutrientes:

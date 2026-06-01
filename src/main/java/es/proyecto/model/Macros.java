@@ -15,6 +15,9 @@ public class Macros {
         this.carbohidratosGramos = carbohidratosGramos;
         this.grasasGramos = grasasGramos;
     }
+    public Macros() {
+        // Constructor vacío para frameworks que lo requieran
+    }
 
     public double getCalorias() {
         return calorias;

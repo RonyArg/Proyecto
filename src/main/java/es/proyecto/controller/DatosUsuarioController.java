@@ -4,7 +4,6 @@ import java.net.URL;
 import java.util.List;
 import java.util.ResourceBundle;
 
-import es.proyecto.App;
 import es.proyecto.context.InformacionTemporal;
 import es.proyecto.context.Usuario;
 import es.proyecto.model.Macros;
@@ -83,17 +82,16 @@ public class DatosUsuarioController implements Initializable {
         System.out.println("ListView cargado correctamente");
     }
 
-    // Regresa a la primera vista
+    // Cierra la ventana secundaria
     @FXML
     private void btnVolverCalculadora() {
-
-        App.volverInicio();
-    };
+        btnVolver.getScene().getWindow().hide();
+    }
 
     // Cierra la ventana
     @FXML
     private void btnSalir() {
         btnSalir.getScene().getWindow().hide();
-    };
+    }
 
 }

@@ -28,14 +28,23 @@ public class App extends Application {
         scene.setRoot(loadFXML(fxml));
     }
 
-    // Navega a la lista de recetas
+    // Abre una nueva ventana con la lista de recetas
     public static void mostrarListaRecetas() {
         try {
-            setRoot("secondary");
+            Stage ventanaSecundaria = new Stage();
+            Scene sceneSecundaria = new Scene(loadFXML("secondary"), 900, 700);
+            sceneSecundaria.getStylesheets().add(App.class.getResource("/styles.css").toExternalForm());
+            
+            ventanaSecundaria.setScene(sceneSecundaria);
+            ventanaSecundaria.setTitle("Tus Datos Nutricionales");
+            ventanaSecundaria.setResizable(false);
+            ventanaSecundaria.getIcons().add(new javafx.scene.image.Image(App.class.getResourceAsStream("/apple.png")));
+            ventanaSecundaria.show();
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
+    
     // Vuelve a la pantalla de inicio
     public static void volverInicio() {
         try {
@@ -46,12 +55,12 @@ public class App extends Application {
     }
 
     private static Parent loadFXML(String fxml) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource(fxml + ".fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("/es/proyecto/" + fxml + ".fxml"));
         return fxmlLoader.load();
     }
 
 
     public static void main(String[] args) {
-        launch();
+        launch(args);
     }
 }
